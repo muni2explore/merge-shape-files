@@ -73,10 +73,10 @@ ogr2ogr -f "GeoJSON" w.geojson merge.shp
 select only required fields
 
 ```bash
-ogr2ogr -select NAME -f "GeoJSON" w_1.geojson merge.shp
+ogr2ogr -select NAME,ISO_A2 -f "GeoJSON" world_with_ant.geojson merge.shp
 ```
 select and where 
 
 ```bash
-ogr2ogr -select NAME -where 'ISO_A2!="AQ"' -f "GeoJSON" w_ant2.geojson merge.shp
+ogr2ogr -select NAME,ISO_A2 -where 'ISO_A2!="AQ"' -f "GeoJSON" world_without_ant.geojson merge.shp
 ```
