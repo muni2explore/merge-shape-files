@@ -70,8 +70,13 @@ done
 ```bash
 ogr2ogr -f "GeoJSON" w.geojson merge.shp
 ```
-Select only required fields
+select only required fields
 
 ```bash
 ogr2ogr -select NAME -f "GeoJSON" w_1.geojson merge.shp
+```
+select and where 
+
+```bash
+ogr2ogr -select NAME -where 'ISO_A2!="AQ"' -f "GeoJSON" w_ant2.geojson merge.shp
 ```
