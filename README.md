@@ -61,7 +61,17 @@ do
            ogr2ogr -f 'ESRI Shapefile' -update -append $file $i -nln merge
       else
            echo "merging……"
-      ogr2ogr -f 'ESRI Shapefile' $file $i
+      ogr2ogr -f 'ESRI Shapefile' $file $i -lco ENCODING=UTF-8
 fi
 done
+```
+## Convert Shapefiles into GeoJSON
+
+```bash
+ogr2ogr -f "GeoJSON" w.geojson merge.shp
+```
+Select only required fields
+
+```bash
+ogr2ogr -select NAME -f "GeoJSON" w_1.geojson merge.shp
 ```
