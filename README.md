@@ -41,6 +41,9 @@ Comma-delimited list of fields from input layer to copy to the new layer. A fiel
 #### -nln name:
 Assign an alternate name to the new layer
 
+[Refer the official document](http://www.gdal.org/ogr2ogr.html)
+
+
 ### Bash command
 
 
