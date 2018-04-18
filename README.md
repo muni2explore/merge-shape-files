@@ -80,3 +80,9 @@ select and where
 ```bash
 ogr2ogr -select NAME,ISO_A2 -where 'ISO_A2!="AQ"' -f "GeoJSON" world_without_ant.geojson merge.shp
 ```
+
+## Convert GeoJSON into topoJSON
+
+```bash
+geo2topo input.geojson > output.topojson
+```
