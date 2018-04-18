@@ -11,7 +11,7 @@ next merge another shape file with merge.shp
 ogr2ogr -f 'ESRI Shapefile' -update -append merge.shp ne_10m_admin_0_disputed_areas.shp -nln merge
 ```
 Where
--f format_name:
+#### -f format_name:
 
 output file format name, some possible values are:
 <pre>
@@ -22,23 +22,26 @@ output file format name, some possible values are:
      -f "PostgreSQL"
 </pre> 
 
--append:
+#### -append:
 
 Append to existing layer instead of creating new
 
--overwrite:
+#### -overwrite:
 
 Delete the output layer and recreate it empty
 
--update:
+#### -update:
 
 Open existing output datasource in update mode rather than trying to create a new one
 
--select field_list:
+#### -select field_list:
 
 Comma-delimited list of fields from input layer to copy to the new layer. A field is skipped if mentioned previously in the list even if the input layer has duplicate field names. (Defaults to all; any field is skipped if a subsequent field with same name is found.) Starting with OGR 1.11, geometry fields can also be specified in the list.
 
-Bash command
+#### -nln name:
+Assign an alternate name to the new layer
+
+### Bash command
 
 
 ```bash
