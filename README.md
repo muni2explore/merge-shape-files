@@ -1,7 +1,11 @@
 # Links
 [Basic Editing Geoprocessing Tools in QGIS](https://grindgis.com/software/qgis/basic-editing-tools-in-qgis)
+
 [How to remove the overlapping part of polygons?](https://gis.stackexchange.com/questions/201668/how-to-remove-the-overlapping-part-of-polygons)
+
 [QGIS Change Attribute Type](https://wiki.tuflow.com/index.php?title=QGIS_Change_Attribute_Type)
+
+[Merge Shapefile polygons using Quantum GIS](http://www.studytrails.com/blog/merge-shapefile-polygons-using-quantum-gis/)
 
 # merge-shape-files
 Merge shape files
